@@ -5,12 +5,12 @@ const AstronomyCard = (props) => {
 
     return (
         <div className="astronomy-card">
-            <h3 className="astronomy-title">{title}</h3>
+            <h2 className="astronomy-title">{title}</h2>
             <a href={hdurl} className="astronomy-image-wrapper">
                 <img src={url} alt={title} />
             </a>
             <p>{explanation}</p>
-            <span>{date}, {copyright}</span>
+            <span>{date}, &copy; {copyright}</span>
         </div>
     )
 }

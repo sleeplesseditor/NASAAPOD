@@ -23,22 +23,48 @@ body {
 }
 
 .astronomy-title {
-    margin: 25px 0;
-    padding: 15px 45px;
-    font-size: 18px;
-    color: #6200ea;
+    margin: 15px 0;
+    padding: 5px 45px;
+    font-size: 32px;
+    color: #000000;
+    text-transform: uppercase;
 }
 
 .astronomy-image-wrapper {
     padding: 10px;
+    
 }
 
 img {
     cursor: pointer;
     max-height: 700px;
     filter: drop-shadow(6px 6px 12px rgba(0,0,0,0.45));
-    transition: all 325ms ease-in-out;
+    transition: all 325ms ease-in-out;  
 }
+
+@media only screen and (max-width: 600px){
+    img {
+        max-height: 240px;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    img {
+        max-height: 10px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    img {
+        max-height: 500px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    img {
+        max-height: 600px;
+    }
+}  
 
 img:hover {
     transition: all 325ms ease-in-out;
@@ -57,4 +83,34 @@ span {
 	font-size: 10px;
 	color: #311b92;
 	margin: 20px 0;
+}
+
+/* Navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+li {
+    float: left;
+}
+
+.logo_image {
+    height: 5rem;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+li p {
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-size: 24px;
 }
