@@ -1,4 +1,5 @@
 import React from 'react';
+import Moment from 'react-moment';
 
 const AstronomyCard = (props) => {
     const { title, url, hdurl, explanation, date, copyright } = props.data;
@@ -10,9 +11,15 @@ const AstronomyCard = (props) => {
                 <img src={url} alt={title} />
             </a>
             <p>{explanation}</p>
-            <span>{date}, &copy; {copyright}</span>
+            <span>
+                &copy; {copyright}, &nbsp;
+                <Moment format="DD/MM/YYYY">
+                    {date}
+                </Moment> 
+            </span>
         </div>
     )
 }
 
 export default AstronomyCard;
+
