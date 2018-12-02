@@ -49,6 +49,13 @@ img {
     }
 }
 
+/* Small Devices */
+@media only screen and (max-width: 450px){
+    img {
+        max-width: 200px;
+    }
+}
+
 /* @media only screen and (min-width: 768px){
     img {
         max-height: 10px;

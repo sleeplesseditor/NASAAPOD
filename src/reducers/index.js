@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import AppReducer from './app_reducer';
+import DataReducer from './data';
 
 const rootReducer = combineReducers({
-    astronomy: AppReducer
+    astronomy: DataReducer
 })
 
 export default rootReducer;

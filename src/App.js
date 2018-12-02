@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import './App.css';
 import './styles.css';
 import NavBar from './components/NavBar';
-import AstronomyContainer from './components/AstronomyContainer';
+import AstronomyList from './components/AstronomyList';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <NavBar />
-        <AstronomyContainer />
+        <AstronomyList />
       </div>
     );
   }
