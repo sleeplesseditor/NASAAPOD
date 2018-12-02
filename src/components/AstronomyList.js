@@ -20,9 +20,7 @@ class AstronomyList extends Component {
         return (
             <div className="astronomy-card">
                 <h2 className="astronomy-title">{astronomy.title}</h2>
-                <a href={astronomy.hdurl} className="astronomy-image-wrapper">
-                    <img className="astronomy_pic" src={astronomy.url} alt={astronomy.title} />
-                </a>
+                <img className="astronomy_pic" src={astronomy.url} alt={astronomy.title} />
                 <p className="explanation">{astronomy.explanation}</p>
                 <span>
                     &copy; {astronomy.copyright ? astronomy.copyright : `NASA`}, &nbsp;

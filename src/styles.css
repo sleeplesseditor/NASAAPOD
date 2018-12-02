@@ -32,11 +32,9 @@ body {
 
 .astronomy-image-wrapper {
     padding: 10px;
-    
 }
 
 img {
-    cursor: pointer;
     max-height: 700px;
     max-width: 760px;
     filter: drop-shadow(6px 6px 12px rgba(0,0,0,0.45));
@@ -110,13 +108,12 @@ li p {
     font-weight: 600;
     margin-bottom: 20px;
     cursor: pointer;
-    transition: all .2s ;
+    transition: all .6s;
 }
 
-.update-button:hover,
-.update-button:focus {
+.update_button:hover {
     background-color: #fc3d21;
-    transform: scale(1.07);
+    transform: scale(1.2);
 }
 
 /* MEDIA QUERIES */
