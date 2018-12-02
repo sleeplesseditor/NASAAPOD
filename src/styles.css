@@ -55,6 +55,14 @@ p {
     text-align: justify;
 }
 
+.share {
+    margin-top: 60px;
+	font-size: 18px;
+	padding: 0 30px;
+    line-height: 1.5;
+    margin-bottom: -40px;
+}
+
 span {
 	font-size: 15px;
 	color: #ec1919;

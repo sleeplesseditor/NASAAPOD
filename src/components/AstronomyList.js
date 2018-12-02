@@ -28,6 +28,7 @@ class AstronomyList extends Component {
                         {astronomy.date}
                     </Moment> 
                 </span>
+                <p className="share">Share this image</p>
                 <SimpleShareButtons
                     url={astronomy.url}
                     whitelist={
