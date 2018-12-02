@@ -20,7 +20,7 @@ class AstronomyList extends Component {
                 </a>
                 <p>{astronomy.explanation}</p>
                 <span>
-                    &copy; {astronomy.copyright ? `Unknown` : ``}, &nbsp;
+                    &copy; {astronomy.copyright ? astronomy.copyright : `NASA`}, &nbsp;
                     <Moment format="DD/MM/YYYY">
                         {astronomy.date}
                     </Moment> 
