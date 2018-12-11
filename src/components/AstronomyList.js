@@ -18,7 +18,7 @@ class AstronomyList extends Component {
 
     renderList(astronomy) {
         return (
-            <div className="astronomy-card">
+            <div className="astronomy-card" key={astronomy.title}>
                 <h2 className="astronomy-title">{astronomy.title}</h2>
                 <img className="astronomy_pic" src={astronomy.url} alt={astronomy.title} />
                 <p className="explanation">{astronomy.explanation}</p>
