@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "nasa-apod": "nasa-apod-c1984",
+    "default": "nasa-apod-c1984"
+  }
+}
