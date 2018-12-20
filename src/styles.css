@@ -36,7 +36,7 @@ body {
 
 img {
     max-height: 700px;
-    max-width: 760px;
+    max-width: 550px;
     filter: drop-shadow(6px 6px 12px rgba(0,0,0,0.45));
     transition: all 325ms ease-in-out;  
 }
