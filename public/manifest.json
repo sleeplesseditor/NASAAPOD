@@ -3,7 +3,7 @@
     "name": "NASA Astronomy Photos of the Day",
     "icons": [
       {
-        "src": "iViewLogo.png",
+        "src": "nasa_logo.png",
         "sizes": "512x512",
         "type": "image/png"
       }
