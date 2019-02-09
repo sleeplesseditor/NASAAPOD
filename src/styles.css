@@ -34,15 +34,15 @@ body {
     padding: 10px;
 }
 
-img {
+.astronomy-card > img {
     max-height: 700px;
-    max-width: 550px;
+    max-width: 70vw;
     filter: drop-shadow(6px 6px 12px rgba(0,0,0,0.45));
     transition: all 325ms ease-in-out;  
 }
 
 
-img:hover {
+.astronomy-card > img:hover {
     transition: all 325ms ease-in-out;
     transform: scale(1.07);
 }
