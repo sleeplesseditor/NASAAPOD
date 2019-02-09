@@ -1,5 +1,6 @@
 import { 
-    FETCH_DATA 
+    FETCH_DATA,
+    RESET_LIST 
 } from './types';
 import axios from 'axios';
 
@@ -11,4 +12,10 @@ export function fetchData(){
         type: FETCH_DATA,
         payload: request
     };
+}
+
+export function resetList(){
+    return {
+        type: RESET_LIST
+    }
 }

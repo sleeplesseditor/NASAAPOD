@@ -14,7 +14,12 @@ class AstronomyList extends Component {
     refreshList(e) {
         e.preventDefault();
         this.props.fetchData();
-    } 
+    }
+    
+    resetList(e) {
+        e.preventDefault();
+        this.props.resetList();
+    }
 
     renderList(astronomy) {
         return (
@@ -44,7 +49,7 @@ class AstronomyList extends Component {
 
     render() {
         return (
-            <div>
+            <div className="button_container">
                 {this.props.astronomy.map(this.renderList)}
                 <button 
                     className="update_button"
@@ -52,39 +57,17 @@ class AstronomyList extends Component {
                 >
                     Fetch More Photos
                 </button>
+                <button
+                    className="reset_button"
+                    onClick={(e) => {this.resetList(e)}}
+                >
+                    Reset
+                </button>
             </div>
         );
     }
 }
 
-// const AstronomyCard = (props) => {
-//     const { title, url, hdurl, explanation, date, copyright } = props.data;
-
-//     return (
-//         <div className="astronomy-card">
-//             <h2 className="astronomy-title">{title}</h2>
-//             <a href={hdurl} className="astronomy-image-wrapper">
-//                 <img src={url} alt={title} />
-//             </a>
-//             <p>{explanation}</p>
-//             <span>
-//                 &copy; {{copyright} ? `Unknown` : ``}, &nbsp;
-//                 <Moment format="DD/MM/YYYY">
-//                     {date}
-//                 </Moment> 
-//             </span>
-//             <SimpleShareButtons
-//                 url={url}
-//                 whitelist={
-//                     ["Facebook", "Twitter", "Tumblr", "Pinterest", "Reddit"]
-//                 }
-//                 size="40px"
-//                 via="NASA"
-//             />
-
-//         </div>
-//     )
-// }
 
 function mapStateToProps(state) {
     return { astronomy: state.astronomy };
