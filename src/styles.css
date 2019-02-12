@@ -267,7 +267,6 @@ li {
 
     .nav_header {
         float: right;
-        margin-left: 200px;
         text-align: right;
     }
 
@@ -282,7 +281,10 @@ li {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
-    
+    .nav_header {
+        float: right;
+        text-align: right;
+    }
 }
 
 /* IPHONE 6+/7+/8+ */
@@ -310,13 +312,13 @@ li {
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
     .astronomy_pic {
-        max-width: 450px;
+        max-width: 300px;
     }
 
     .nav_header {
         font-size: 24px;
-        float: right;
-        justify-content: space-between;
+        margin-left: 200px;
+        text-align: right;
     }
 }
 
@@ -355,7 +357,7 @@ li {
 
     .nav_header {
         float: right;
-        margin-left: 250px;
+        margin-left: 250px !important;
         text-align: right;
     }
 
