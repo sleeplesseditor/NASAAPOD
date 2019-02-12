@@ -7,10 +7,14 @@ class NavBar extends Component {
             <div>
                 <ul>
                     <li>
-                        <img src={logo} alt="Nasa Logo" className="logo_image"/>
+                        <a href="/">
+                            <img src={logo} alt="Nasa Logo" className="logo_image"/>
+                        </a>
                     </li>
                     <li>
-                        <p className="nav_header">Astronomy Photos of the Day</p>
+                        <a href="/">
+                            <p className="nav_header">Astronomy Photos of the Day</p>
+                        </a>
                     </li>
                 </ul>
             </div>
