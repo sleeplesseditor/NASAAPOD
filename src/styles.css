@@ -9,6 +9,11 @@ body {
   margin: 0;
 }
 
+.connection_message {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
 /* ASTRONOMY CARD */
 
 .astronomy-card {
@@ -40,12 +45,7 @@ body {
     max-width: 70vw;
     filter: drop-shadow(6px 6px 12px rgba(0,0,0,0.45));
     transition: all 325ms ease-in-out;  
-}
-
-
-.astronomy-card > img:hover {
-    transition: all 325ms ease-in-out;
-    transform: scale(1.07);
+    cursor: pointer;
 }
 
 p {

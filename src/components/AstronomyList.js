@@ -6,14 +6,19 @@ import { SimpleShareButtons } from "react-simple-share";
 
 class AstronomyList extends Component {
 
+    state = {
+        isModalOpen: false
+      };
+
     componentDidMount(){
-        console.log(this.props.astronomy);
+        console.log('Initial result', this.props.astronomy);
         this.props.fetchData();
     }
 
     refreshList(e) {
         e.preventDefault();
         this.props.fetchData();
+        console.log('Updated result', this.props.astronomy);
     }
     
     resetList(e) {
@@ -25,7 +30,11 @@ class AstronomyList extends Component {
         return (
             <div className="astronomy-card" key={astronomy.title}>
                 <h2 className="astronomy-title">{astronomy.title}</h2>
-                <img className="astronomy_pic" src={astronomy.url} alt={astronomy.title} />
+                <img 
+                    className="astronomy_pic" 
+                    src={astronomy.url} 
+                    alt={astronomy.title}
+                />
                 <p className="explanation">{astronomy.explanation}</p>
                 <span>
                     &copy; {astronomy.copyright ? astronomy.copyright : `NASA`}, &nbsp;
@@ -42,7 +51,6 @@ class AstronomyList extends Component {
                     size="40px"
                     via="NASA"
                 />
-
             </div>
         )
     }
