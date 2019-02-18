@@ -3,8 +3,8 @@
     "name": "NASA Astronomy Photos of the Day",
     "icons": [
       {
-        "src": "nasa-logo-white.png",
-        "sizes": "300x300",
+        "src": "nasa-logo-white_1.png",
+        "sizes": "512x512",
         "type": "image/png"
       }
     ],
