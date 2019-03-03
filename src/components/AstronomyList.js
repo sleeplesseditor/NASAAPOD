@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 import Moment from 'react-moment';
+import ModalImage from 'react-modal-image';
 import { SimpleShareButtons } from "react-simple-share";
 
 class AstronomyList extends Component {
@@ -30,11 +31,19 @@ class AstronomyList extends Component {
         return (
             <div className="astronomy-card" key={astronomy.title}>
                 <h2 className="astronomy-title">{astronomy.title}</h2>
-                <img 
-                    className="astronomy_pic" 
-                    src={astronomy.url} 
-                    alt={astronomy.title}
-                />
+                <div className="astronomy-image-wrapper">
+                    <ModalImage
+                        className="astronomy_pic" 
+                        small={astronomy.url}
+                        large={astronomy.hdurl}
+                    >
+                        <img 
+                            className="astronomy_pic" 
+                            src={astronomy.url} 
+                            alt={astronomy.title}
+                        />
+                    </ModalImage>
+                </div>
                 <p className="explanation">{astronomy.explanation}</p>
                 <span>
                     &copy; {astronomy.copyright ? astronomy.copyright : `NASA`}, &nbsp;

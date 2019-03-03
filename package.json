@@ -9,6 +9,7 @@
     "react": "^16.6.3",
     "react-detect-offline": "^2.1.2",
     "react-dom": "^16.6.3",
+    "react-modal-image": "^2.3.2",
     "react-moment": "^0.8.4",
     "react-redux": "^5.1.1",
     "react-scripts": "^2.1.5",

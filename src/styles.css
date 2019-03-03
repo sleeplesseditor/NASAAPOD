@@ -37,14 +37,13 @@ body {
 }
 
 .astronomy-image-wrapper {
-    padding: 10px;
+    padding: 2rem;
 }
 
-.astronomy-card > img {
+.astronomy_pic {
     max-height: 700px;
-    max-width: 70vw;
+    max-width: 70%;
     filter: drop-shadow(6px 6px 12px rgba(0,0,0,0.45));
-    transition: all 325ms ease-in-out;  
     cursor: pointer;
 }
 
