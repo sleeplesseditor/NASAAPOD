@@ -6,7 +6,7 @@ describe("NavBar", () => {
     let component;
   
     beforeEach(() => {
-        component = shallow(<NavBar />)
+        component = shallow(<NavBar />);
     });
   
     it("should render without throwing an error", () => {
@@ -18,7 +18,7 @@ describe("NavBar", () => {
       expect(navbarLogo).toHaveLength(1);
     });
   
-    it("should render the Navbar logo", () => {
+    it("should render the Navbar header text", () => {
         const navbarTitle = component.find('.nav_header');
         expect(navbarTitle).toHaveLength(1);
     });
