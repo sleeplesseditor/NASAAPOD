@@ -11,12 +11,13 @@ const store = mockStore({});
 
 describe("App", () => {
   let component;
+
   beforeEach(() => {
     component = shallow(
       <Provider store={store}>
           <App />
       </Provider>
-  )
+    )
   });
 
   it("should render without throwing an error", () => {

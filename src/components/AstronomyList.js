@@ -6,10 +6,9 @@ import ModalImage from 'react-modal-image';
 import { SimpleShareButtons } from "react-simple-share";
 
 class AstronomyList extends Component {
-
     state = {
         isModalOpen: false
-      };
+    };
 
     componentDidMount(){
         console.log('Initial result', this.props.astronomy);
